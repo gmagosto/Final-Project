@@ -42,15 +42,15 @@ time.sleep(2)
 q1 = '''This Amendment secures the 'right of the people to be secure in their persons, houses, papers, and effects,
 against unreasonable searches and seizures.' Which Amendment is it?'''
 q2 = '''This Amendment states that 'private property be taken for public use, without just compensation.'
-Which Amendement is it?'''
-q3 = '''This Amendment ensures the right to an attorney in criminal procceedings. Which Amendment is it?'''
-q4 = '''This Amendment states that no warrants will be issued without probable cause and supoorted by Oath or affirmation.'
 Which Amendment is it?'''
-q5 = '''This Amendment requires that no cruel and unusual punishments inflicted.
+q3 = '''This Amendment ensures the right to an attorney in criminal proceedings. Which Amendment is it?'''
+q4 = '''This Amendment states that 'no warrants will be issued without probable cause and supported by Oath or affirmation.'
+Which Amendment is it?'''
+q5 = '''This Amendment requires that no cruel and unusual punishments be inflicted.
 Which Amendment is it?'''
 q6 = '''This Amendment ensures that 'the accused shall enjoy the right to a speedy and public trial,
 by an impartial jury of the State and district wherein the crime shall have been committed.' Which Amendment is it?'''
-q7 = '''This Amendment states that no 'person be subject for the same offence to be twice' nor
+q7 = '''This Amendment states that no 'person be subject for the same offense to be twice' nor
 'be deprived of life, liberty, or property, without due process of law.' Which Amendment is it?'''
 
 # Dictionary of questions with corresponding answers
@@ -96,5 +96,7 @@ for i in questions:
             print("-----------------------")
 
 print("Your final score is: ", score)
+percent = round((score / 7) * 100)
+print("You got a:", percent, "%")
 again()
         
