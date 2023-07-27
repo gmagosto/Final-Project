@@ -74,6 +74,9 @@ def again():
                 score = score+0
                 print("Current score: ",score)
                 print("-----------------------")
+        print("Your final score is: ", score)
+        percent = round((score / 7) * 100)
+        print("You got a:", percent, "%")
     else:
         print("Goodbye!")
         exit()
