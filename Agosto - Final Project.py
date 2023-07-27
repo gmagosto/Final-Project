@@ -58,8 +58,12 @@ questions = {q1:"4th", q2:"5th", q3:"6th", q4:"4th", q5:"8th", q6:"6th", q7:"5th
 
 # Running the game again
 def again():
-    again = input("Would you like to try again?: (y/n)")
+    again = input("Would you like to try one more time?: (y/n)")
     if again == 'y':
+        print("Okay, let's do it!")
+        print("-----------------------")
+        time.sleep(2)
+        score=0
         for i in questions:
             print(i)
             print("-----------------------")
