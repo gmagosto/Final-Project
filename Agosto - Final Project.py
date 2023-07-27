@@ -2,7 +2,6 @@
 # Criminal Procedure Amendment Review Game
 import random
 import time
-from pprint import pformat
 
 # Introduction 
 print("Hello! Welcome to the Criminal Procedure Amendment Review Game!")
