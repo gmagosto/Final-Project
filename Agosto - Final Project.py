@@ -39,13 +39,19 @@ print("-----------------------")
 time.sleep(2)
 
 # List of questions
-q1 = "This Amendment secures the 'right of the people to be secure in their persons, houses, papers, and effects, against unreasonable searches and seizures.' Which Amendment is it?"
-q2 = "This Amendment states that 'private property be taken for public use, without just compensation.' Which Amendement is it?"
-q3 = "This Amendment ensures the right to an attorney in criminal procceedings. Which Amendment is it?"
-q4 = "This Amendment states that no warrants will be issued without probable cause and supoorted by Oath or affirmation.' Which Amendment is it?"
-q5 = "This Amendment requires that no cruel and unusual punishments inflicted. Which Amendment is it?"
-q6 = "This Amendment ensures that 'the accused shall enjoy the right to a speedy and public trial, by an impartial jury of the State and district wherein the crime shall have been committed.' Which Amendment is it?"
-q7 = "This Amendment states that no 'person be subject for the same offence to be twice' nor 'be deprived of life, liberty, or property, without due process of law.' Which Amendment is it?"
+q1 = '''This Amendment secures the 'right of the people to be secure in their persons, houses, papers, and effects,
+against unreasonable searches and seizures.' Which Amendment is it?'''
+q2 = '''This Amendment states that 'private property be taken for public use, without just compensation.'
+Which Amendement is it?'''
+q3 = '''This Amendment ensures the right to an attorney in criminal procceedings. Which Amendment is it?'''
+q4 = '''This Amendment states that no warrants will be issued without probable cause and supoorted by Oath or affirmation.'
+Which Amendment is it?'''
+q5 = '''This Amendment requires that no cruel and unusual punishments inflicted.
+Which Amendment is it?'''
+q6 = '''This Amendment ensures that 'the accused shall enjoy the right to a speedy and public trial,
+by an impartial jury of the State and district wherein the crime shall have been committed.' Which Amendment is it?'''
+q7 = '''This Amendment states that no 'person be subject for the same offence to be twice' nor
+'be deprived of life, liberty, or property, without due process of law.' Which Amendment is it?'''
 
 # Dictionary of questions with corresponding answers
 questions = {q1:"4th", q2:"5th", q3:"6th", q4:"4th", q5:"8th", q6:"6th", q7:"5th"}
@@ -55,7 +61,6 @@ def again():
     again = input("Would you like to try again?: (y/n)")
     if again == 'y':
         for i in questions:
-            score = 0
             print(i)
             print("-----------------------")
             ans = input("Enter your answer: ")
@@ -81,7 +86,6 @@ def again():
 # Review game
 attempts = None
 for i in questions:
-    random.choice(dict(questions.items()))
     print(i)
     print("-----------------------")
     ans = input("Enter your answer: ")
