@@ -80,6 +80,9 @@ def again():
         print("Your final score is: ", score)
         percent = round((score / 7) * 100)
         print("You got a:", percent, "%")
+        print("Goodbye!")
+        time.sleep(4)
+        exit()
     else:
         print("Goodbye!")
         exit()
