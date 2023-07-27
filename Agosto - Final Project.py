@@ -75,13 +75,8 @@ def again():
                 print("Current score: ",score)
                 print("-----------------------")
     else:
-        print("Final score is:", score)
         print("Goodbye!")
-        sys.exit()
-    if again not in ['y','n']:
-        print("Again, must be y or n.")
-        return
-        again()
+        exit()
      
 # Review game
 attempts = None
