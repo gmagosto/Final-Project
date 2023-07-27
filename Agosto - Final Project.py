@@ -1,6 +1,6 @@
 # Genesis Agosto Summer 2023 Python Final Project
 # Criminal Procedure Amendment Review Game
-import random
+import math
 import time
 
 # Introduction 
